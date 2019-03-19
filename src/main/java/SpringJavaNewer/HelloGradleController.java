@@ -11,4 +11,9 @@ public class HelloGradleController {
         return "Hello Gradle!";
     }
 
+    @GetMapping( path = "/teste")
+    public String teste() {
+        return "Hello Gradle teste";
+    }
+
 }
