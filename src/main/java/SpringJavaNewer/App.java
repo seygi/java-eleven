@@ -7,7 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class App {
 
     public static void main(String[] args) {
+
         SpringApplication.run(App.class, args);
+
+
+        BookWebClient bwc = new BookWebClient();
+        System.out.println(bwc.fetchBookById());
+        System.out.println("---------------------");
+        System.out.println(bwc.fetchAllBooks());
     }
 
 }
