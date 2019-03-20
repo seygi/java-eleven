@@ -17,10 +17,13 @@ public class BookController {
 
     @GetMapping("/book/{id}")
     public Mono<Book> getBookById(@PathVariable("id") Integer id) {
+
         return service.getBookById(id);
     }
+
     @GetMapping("/allbooks")
     public Mono<List<Book>> getAllBooks() {
+
         return service.getAllBooks();
     }
 }

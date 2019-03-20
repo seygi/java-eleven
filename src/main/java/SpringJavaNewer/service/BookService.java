@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 public class BookService {
     public Mono<Book> getBookById(int id) {
         Predicate<Book> predicate = b -> b.getId() == id;
-        Book book = Book.getAllBooks().stream().filter(predicate).findFirst().get();
+        var book = Book.getAllBooks().stream().filter(predicate).findFirst().get();
         return Mono.just(book);
     }
     public Mono<List<Book>> getAllBooks() {
