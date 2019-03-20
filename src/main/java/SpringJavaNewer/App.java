@@ -11,10 +11,10 @@ public class App {
         SpringApplication.run(App.class, args);
 
 
-        BookWebClient bwc = new BookWebClient();
-        System.out.println(bwc.fetchBookById());
-        System.out.println("---------------------");
-        System.out.println(bwc.fetchAllBooks());
+//        BookWebClient bwc = new BookWebClient();
+//        System.out.println(bwc.fetchBookById());
+//        System.out.println("---------------------");
+//        System.out.println(bwc.fetchAllBooks());
     }
 
 }
